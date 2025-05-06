@@ -1,10 +1,4 @@
-/*SEB Name-Urvi Anil Wasnik  Roll no.-69
-Beginning with an empty binary search tree, Construct a binary search tree by inserting the values in the order given. After constructing a binary tree -
-i. Insert new node, 
-ii. Find number of nodes in longest path from root, 
-iii. Minimum data value found in the tree, 
-iv. Change a tree so that the roles of the left and right pointers are swapped at every node,
-v. Search a value*/
+
 #include <iostream>
 using namespace std;
 
@@ -108,7 +102,6 @@ void BST :: inorder (node *temp)
 void BST :: smallest()
 {
 	node *temp=root;
-	// Traverse to the leftmost node
 	while (temp != NULL && temp->left != NULL)
 	{
 		temp=temp->left;
@@ -264,125 +257,3 @@ int main()
 
 	return 0;
 }
-
-
-/*OUTPUT :-
-student@student-OptiPlex-3050:~/Desktop/SEB-66$ g++ BST.cpp
-student@student-OptiPlex-3050:~/Desktop/SEB-66$ ./a.out
-
-*****MENU*****
-1.Insert
-2.Inorder traversal
-3.Smallest
-4.Biggest
-5.Mirror Image
-6.Search
-7.Height
-8.Exit
-Enter your choice:1
-How many nodes do you want to insert ? :- 6
-Insert value of new node: 50
-Node added successfully.
-Insert value of new node: 80
-
-Node added successfully.
-Insert value of new node: 35
-
-Node added successfully.
-Insert value of new node: 75
-
-Node added successfully.
-Insert value of new node: 65
-
-Node added successfully.
-Insert value of new node: 20
-
-Node added successfully.
-
-*****MENU*****
-1.Insert
-2.Inorder traversal
-3.Smallest
-4.Biggest
-5.Mirror Image
-6.Search
-7.Height
-8.Exit
-Enter your choice:2
-
-INORDER TRAVERSAL
-20 35 50 65 75 80 
-*****MENU*****
-1.Insert
-2.Inorder traversal
-3.Smallest
-4.Biggest
-5.Mirror Image
-6.Search
-7.Height
-8.Exit
-Enter your choice:3
-
-Smallest Number: 20
-*****MENU*****
-1.Insert
-2.Inorder traversal
-3.Smallest
-4.Biggest
-5.Mirror Image
-6.Search
-7.Height
-8.Exit
-Enter your choice:4
-
-Biggest number : 80
-*****MENU*****
-1.Insert
-2.Inorder traversal
-3.Smallest
-4.Biggest
-5.Mirror Image
-6.Search
-7.Height
-8.Exit
-Enter your choice:5
-
-Mirror image is : 80 75 65 50 35 20 
-*****MENU*****
-1.Insert
-2.Inorder traversal
-3.Smallest
-4.Biggest
-5.Mirror Image
-6.Search
-7.Height
-8.Exit
-Enter your choice:6
-
-Enter the key to be search : 50
-
-Element found 
-*****MENU*****
-1.Insert
-2.Inorder traversal
-3.Smallest
-4.Biggest
-5.Mirror Image
-6.Search
-7.Height
-8.Exit
-Enter your choice:7
-
-The height is : 3
-*****MENU*****
-1.Insert
-2.Inorder traversal
-3.Smallest
-4.Biggest
-5.Mirror Image
-6.Search
-7.Height
-8.Exit
-Enter your choice:8
-Exitstudent@student-OptiPlex-3050:~/Desktop/SEB-66$ 
-*/
