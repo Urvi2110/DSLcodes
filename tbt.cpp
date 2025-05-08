@@ -148,6 +148,9 @@ int main() {
    case 2:
     t.preorder();
     break;
+   case 3:
+     cout<<"Exit Program!!";
+     break;
    default:
     cout << "\nEnter correct choice!!";
     break;
